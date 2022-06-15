@@ -5,7 +5,13 @@ import './Nav.css';
 
 function Nav({onSearch}) {
   return (
-    <div>Nav</div>
+    <div className='navbar navbar-dark bg-dark'>
+      <div>
+        <img src={Logo} alt="" />
+        <span className='text-white ml-3'>Henry - Weather app</span>
+      </div>
+      <SearchBar onSearch={onSearch}/>
+    </div>
   );
 };
 
